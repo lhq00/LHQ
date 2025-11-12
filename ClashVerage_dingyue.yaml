@@ -4011,7 +4011,7 @@ proxies:
 proxy-groups:
   - name: 全部节点
     type: select
-    include-all ： true
+    include-all: true
 rule:
 - DOMAIN-SUFFIX,google.com,全部节点
 - DOMAIN-KEYWORD,google,全部节点
