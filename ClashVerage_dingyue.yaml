@@ -4008,3 +4008,13 @@ proxies:
   udp: true
   network: grpc
   tls: true
+proxy-groups:
+  - name: 全部节点
+    type: select
+    include-all ： true
+rule:
+- DOMAIN-SUFFIX,google.com,全部节点
+- DOMAIN-KEYWORD,google,全部节点
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,全部节点
